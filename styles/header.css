@@ -1,0 +1,67 @@
+.cabecalho__menu-hamburguer{
+    width: 24px;
+    height: 24px;
+    background-image: url('../img/Menu.svg');
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cabecalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* Permite um posicionamento diferente aos filhos */
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem {
+    padding: 1em;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    width: 60vw;
+
+    /* Posiciona o elemento 100% abaixo do elemento pai */
+    top: 100%;
+}
+
+.container__botao {
+    display: none;
+}
+
+.container__botao:checked ~ .lista-menu {
+    display: block;
+}
+
+.lista-menu__titulo, .lista-menu__item {
+    background-color: var(--branco);
+    padding: 1em;
+}
+
+.lista-menu__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.lista-menu__link {
+    background: var(--azul-degrade);
+
+    /* Aplica compatibilidade a diferentes navegadores */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Usado para aplicar a cor somente onde há texto */
+    background-clip: text;
+
+    text-transform: uppercase;
+}
