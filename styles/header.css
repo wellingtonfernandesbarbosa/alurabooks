@@ -26,6 +26,25 @@
     padding: 1em;
 }
 
+#coracao {
+    display: none;
+}
+
+#coracao:checked + .coracao > svg {
+    animation: preencher;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes preencher {
+    0% {
+        fill: transparent;
+    }
+    100% {
+        fill: #002F52;
+    }
+}
+
 .lista-menu {
     display: none;
     position: absolute;
