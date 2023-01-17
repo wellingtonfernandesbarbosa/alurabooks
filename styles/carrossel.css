@@ -32,13 +32,17 @@
 .card__descricao {
     display: flex;
     justify-content: space-between;
+    /* margin-bottom: 0.5em; */
+}
+
+.descicao__estrelas {
     margin-bottom: 0.5em;
 }
 
 .descricao__titulo {
     color: var(--laranja);
     font-weight: 700;
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
 }
 
 .descricao__titulo-livro {
@@ -48,8 +52,13 @@
     margin: 0.5em 0;
 }
 
-.descricao__titulo-texto {
+.descricao__texto {
     font-size: 14px;
+    margin: 0 1em 0 0;
+}
+
+.descricao__imagem {
+    margin-bottom: 17px;
 }
 
 .card__botoes {
