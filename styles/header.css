@@ -123,4 +123,12 @@
         display: none;
     }
 
+    .opcoes__botao:checked ~ .lista-menu {
+        display: block;
+        width: auto;
+    }
+
+    #opcoes-menu {
+        display: none;
+    }
 }
