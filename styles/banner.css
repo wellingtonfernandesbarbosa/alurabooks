@@ -49,3 +49,10 @@
         background-position: 7em;
     }
 }
+
+@media screen and (min-width: 1728px) {
+    .banner {
+        padding-top: 84px;
+        padding-bottom: 84px;
+    }
+}
