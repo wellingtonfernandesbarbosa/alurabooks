@@ -26,10 +26,6 @@
     padding: 1em;
 }
 
-#coracao {
-    display: none;
-}
-
 #coracao:checked + .coracao > svg {
     animation: preencher;
     animation-duration: 0.5s;
@@ -52,10 +48,6 @@
 
     /* Posiciona o elemento 100% abaixo do elemento pai */
     top: 100%;
-}
-
-.container__botao {
-    display: none;
 }
 
 .container__botao:checked ~ .lista-menu {
@@ -85,11 +77,7 @@
     text-transform: uppercase;
 }
 
-.container__titulo, .opcoes {
-    display: none;
-}
-
-.container__texto {
+.container__titulo, .opcoes, .container__botao, .container__texto, #coracao {
     display: none;
 }
 
