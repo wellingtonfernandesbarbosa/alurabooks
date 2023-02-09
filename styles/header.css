@@ -74,6 +74,7 @@
 
 .lista-menu__link {
     background: var(--azul-degrade);
+    text-decoration: none;
 
     /* Aplica compatibilidade a diferentes navegadores */
     -webkit-background-clip: text;
@@ -111,7 +112,7 @@
 
     .opcoes__item {
         text-transform: uppercase;
-        padding: 0 1em;
+        padding: 28px 10px;
     }
 
     .opcoes__link {
@@ -128,8 +129,21 @@
         width: auto;
     }
 
+    .opcoes__botao:checked ~ .opcoes__rotulo > .opcoes__item {
+        background: var(--azul-degrade);
+        color: var(--branco);
+    }
+
     #opcoes-menu {
         display: none;
+    }
+
+    .lista-menu__item:hover {
+        background: var(--azul-degrade);
+    }
+
+    .lista-menu__item:hover > .lista-menu__link {
+        -webkit-text-fill-color: var(--branco);
     }
 }
 
