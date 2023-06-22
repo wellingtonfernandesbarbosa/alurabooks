@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+}
+
 .cabecalho__menu-hamburguer{
     width: 24px;
     height: 24px;
@@ -32,6 +36,10 @@
 
 .container__imagem {
     padding: 1em;
+}
+
+.container__titulo {
+    color: var(--preto);
 }
 
 #coracao:checked + .coracao > svg {
