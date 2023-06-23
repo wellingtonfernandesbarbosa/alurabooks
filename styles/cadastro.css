@@ -12,3 +12,7 @@
 .cadastro__subtitulo {
     margin: 1em 0;
 }
+
+.mensagemDeErro {
+    margin-left: 1em;
+}
