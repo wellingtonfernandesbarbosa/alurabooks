@@ -1,4 +1,5 @@
 @import url("styles/header.css");
+@import url("styles/categorias.css");
 @import url("styles/banner.css");
 @import url("styles/carrossel.css");
 @import url("styles/topicos.css");
@@ -18,6 +19,12 @@
     --cinza-claro: #858585;
     --cinza: #474646;
     --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --button-color: #326589;
+    --text-title-color: #fc6621;
+    --text-price-color: #002f52;
+    --text-author-color: #858585;
+    --text-tag-color: #9c9c9c;
+    --text-description-color: #fc6621;
 }
 
 body {
