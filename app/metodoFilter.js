@@ -7,6 +7,18 @@ function filtrarLivros() {
     const categoria = elementoBtn.value;
     let livrosFiltrados = categoria == 'disponivel' ? filtrarPorDisponibilidade() : filtrarPorCategoria(categoria);
     exibirOsLivrosNaTela(livrosFiltrados);
+    if (categoria == 'disponivel') {
+        const valorTotal = valorTotalDosLivrosDisponiveis(livrosFiltrados);
+        exibirCampoComOValorTotalDosLivros(valorTotal);
+    };
+};
+
+function exibirCampoComOValorTotalDosLivros(valorTotal) {
+    campoValorTotalLivrosDisponiveis.innerHTML = `
+    <div class="livros__disponiveis">
+    <p>Todos os livros disponíveis por R$ <span id="valor">${valorTotal}</span></p>
+    </div>
+    `;
 };
 
 function filtrarPorCategoria(categoria) {
